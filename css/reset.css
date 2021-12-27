@@ -62,3 +62,11 @@ button {
 .text-ct {
 	text-align: center;
 }
+
+.bcg-primary {
+	background-color: #1BBC9B;
+}
+
+.bcg-secondary {
+	background-color: #14B9D5;
+}

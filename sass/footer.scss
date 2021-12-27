@@ -1,0 +1,153 @@
+// ---------------IMPORT----------------
+@import "variables";
+@import "mixin.scss";
+
+// ----------------FOOTER----------------
+.footer {
+	position: relative;
+	@include widthHeight(100%, auto);
+
+	&__img {
+		@include widthHeight(100%, auto);
+
+		&-paralax {
+			object-fit: cover;
+			@include widthHeight(100%, 650px);
+		}
+	}
+
+    &__heading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        &-content {
+            height: 210px;
+            padding: 80px 100px;
+
+            &-describle {
+                flex: 1;
+                margin-left: 80px;
+
+                h4 {
+                    color: #9a9a9a;
+                    @include fullSize(1.4rem, normal, 2px, 1.4rem);
+                }
+
+                h2 {
+                    color: #555555;
+                    @include fullSize(3.5rem, bold, 0px, 3.8rem);
+                    padding-top: 20px;
+                    display: inline-block;
+                }
+            }
+
+            &-search {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                input {
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    border: 1px solid #cccc;
+                    background-color: #f9f9f9;
+                    width: 280px;
+                    @include fullSize(1.8rem, 400, 0px, normal);
+                }
+
+                button {
+                    background-color: #14b9d5;
+                    border-radius: 30px;
+                    border: 0px solid $textColorHeader;
+                    padding: 10px 20px;
+                    -webkit-appearance: none;
+                    color: $textColorHeader;
+                    cursor: pointer;
+                    margin-left: 20px;
+                    font-size: 1.4rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+
+    &__background {
+        background-color: $textColorHeader;
+        @include widthHeight(100%, auto);
+        margin-top: 10px;
+        padding: 45px 35px 50px 45px;
+
+        &-component {
+            &-logo {
+                @include widthHeight(150px,35px);
+                margin-bottom: 34px;
+                img {
+                    @include widthHeight(100%);
+                    object-fit: cover;
+                }
+            }
+
+            &-describle {
+                text-align: left;
+                color: #9a9a9a;
+                padding: 0 40px 25px 0;
+                @include fullSize(1.4rem, 400, 1px, 2.7rem);
+            }
+
+            &-contact {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    font-size: 1.4rem;
+                    i {
+                        color: #555555;
+                        padding-right: 20px;
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    &__heading-contact {
+        color: #555555;
+        text-transform: uppercase;
+        padding: 14px 0 24px 0;
+        @include fullSize(1.5rem, normal, 1px, normal);
+    }
+
+    &__background-list-items {
+	    list-style: none;
+
+        li {
+            color: #9a9a9a;
+            @include fullSize(1.4rem, 400, 1px, 2.7rem);
+            // padding-bottom: 1px;
+
+            i {
+                opacity: 0.4;
+                padding-right: 6px;
+            }
+        }
+    }
+
+    &__address {
+	    background-color: #14b9d5;
+        &-text {
+            height: 54px;
+            @extend %flexbettwen;
+            padding: 0 25px;
+            color: white;
+            @include fullSize(1.2rem, 400, 1px, normal);
+        }
+    }
+
+    
+}
+
+// The end

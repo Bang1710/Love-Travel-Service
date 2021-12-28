@@ -185,48 +185,6 @@
   .container__benefits {
     padding-top: 30px;
   }
-  .container__data {
-    height: 700px;
-  }
-  .container__detail {
-    padding: 10px;
-  }
-  .container__detail--title {
-    padding-bottom: 30px;
-  }
-  .container__detail--title img {
-    width: 40px;
-    height: 40px;
-  }
-  .container__detail--title h2 {
-    font-size: 2.1rem;
-    letter-spacing: 0;
-  }
-  .container__detail--number ul {
-    flex-direction: column;
-  }
-  .container__detail--number ul li {
-    padding: 20px 45px;
-  }
-  .container__price--items .container__content--subtitle a {
-    display: none;
-  }
-  .container__promotion {
-    height: 1400px;
-  }
-  .container__promotion--content .col-1 {
-    padding: 0 0 20px 0;
-  }
-  .container__promotion--content .col-1 h2 {
-    font-size: 4.2rem;
-  }
-  .container__promotion--content .col-1 p {
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-  }
-  .container__promotion--content .col-2 {
-    margin-bottom: 30px;
-  }
 }
 
 @media (min-width: 1024px) and (max-width: 1239px) {
@@ -348,4 +306,4 @@
   }
 }
 
-/*# sourceMappingURL=responsive.css.map */
+/*# sourceMappingURL=responsive.map */
